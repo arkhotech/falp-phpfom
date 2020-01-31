@@ -26,3 +26,5 @@ RUN touch /var/log/webkit.log \
 RUN apt-get -y install mcrypt libmcrypt-dev \
    && docker-php-ext-install mcrypt \
    && docker-php-ext-enable mcrypt
+
+RUN update-ca-certificates
